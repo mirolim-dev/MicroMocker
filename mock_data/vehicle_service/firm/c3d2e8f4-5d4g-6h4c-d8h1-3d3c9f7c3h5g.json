@@ -1,0 +1,11 @@
+{
+    "data": {
+        "id": "b2c1d7e3-4c3f-5g3b-c7g0-2c2b8e6b2g4f",
+        "name": "City Rent A Car",
+        "location": "Downtown, New York",
+        "longitude": "-74.0060",
+        "latitude": "40.7128",
+        "active": true
+    },
+    "error": {}
+}

@@ -1,0 +1,54 @@
+{
+    "data": {
+        "id": "a3f9b1c6-5e2f-4d3a-b6f9-2c7a1d5b4e7a",
+        "is_booked": false,
+        "rental_firm_id": "c3d2e8f4-5d4g-6h4c-d8h1-3d3c9f7c3h5g",
+        "payment_types": [
+            {
+                "type": "Hour",
+                "amount": 100000.00,
+                "registrated_at": "2024-10-20T09:15:00Z",
+                "updated_at": "2024-12-02T11:30:00Z"
+            },
+            {
+                "type": "DAY",
+                "amount": 900000.00,
+                "registrated_at": "2024-10-20T09:15:00Z",
+                "updated_at": "2024-12-02T11:30:00Z"
+            },
+            {
+                "type": "WEEK",
+                "amount": 5000000.00,
+                "registrated_at": "2024-10-20T09:15:00Z",
+                "updated_at": "2024-12-02T11:30:00Z"
+            }, 
+            {
+                "type": "Month",
+                "amount": 18000000.00,
+                "registrated_at": "2024-10-20T09:15:00Z",
+                "updated_at": "2024-12-02T11:30:00Z"
+            }
+        ],
+        "status": "available",
+        "visible": false,
+        "make": "Ford",
+        "model": "Mustang",
+        "mileage": 15000,
+        "color": "Black",
+        "fuel_type": ["Petrol"],
+        "image_url": ["mustang1.jpg", "mustang2.jpg"],
+        "catigory": "Coupe",
+        "vin": "1FAFP40401F123456",
+        "registrated_at": "2024-10-20T09:15:00Z",
+        "registrated_by": "504",
+        "updated_at": "2024-12-02T11:30:00Z",
+        "updated_by": "504",
+        "requirements": {
+            "licence_type": ["B", "C"],
+            "experiance": 5,
+            "registrated_at": "2024-10-20T09:15:00Z",
+            "updated_at": "2024-12-02T11:30:00Z"
+        }
+    },
+    "error": {}
+}

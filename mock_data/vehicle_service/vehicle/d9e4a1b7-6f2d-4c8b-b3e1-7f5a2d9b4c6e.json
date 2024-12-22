@@ -1,0 +1,52 @@
+{
+    "data": {
+        "id": "d9e4a1b7-6f2d-4c8b-b3e1-7f5a2d9b4c6e",
+        "is_booked": false,
+        "rental_firm_id": "d4e3f9g5-6e5h-7i5d-e9i2-4e4d0g8d4i6h",
+       "payment_types": [
+        {
+            "type": "HOUR",
+            "amount": 120000.00,
+            "registrated_at": "2024-09-15T08:45:00Z",
+            "updated_at": "2024-11-30T10:30:00Z"
+        },
+        {
+            "type": "DAY",
+            "amount": 850000.00,
+            "registrated_at": "2024-09-15T08:45:00Z",
+            "updated_at": "2024-11-30T10:30:00Z"
+        },
+        {
+            "type": "WEEK",
+            "amount": 4800000.00,
+            "registrated_at": "2024-09-15T08:45:00Z",
+            "updated_at": "2024-11-30T10:30:00Z"
+        },
+        {
+            "type": "MONTH",
+            "amount": 17500000.00,
+            "registrated_at": "2024-09-15T08:45:00Z",
+            "updated_at": "2024-11-30T10:30:00Z"
+        }
+        ],
+        "status": "available",
+        "visible": true,
+        "make": "Tesla",
+        "model": "Model 3",
+        "mileage": 10000,
+        "color": "White",
+        "fuel_type": ["Electric"],
+        "image_url": ["model3_1.jpg", "model3_2.jpg"],
+        "catigory": "Sedan",
+        "vin": "5YJ3E1EA8KF123456",
+        "requirements": {
+            "licence_type": ["B"],
+            "experiance": 6,
+            "registrated_at": "2024-11-01T11:00:00Z",
+            "updated_at": "2024-12-03T13:20:00Z"
+        },
+        "registrated_at": "2024-11-01T11:00:00Z",
+        "updated_at": "2024-12-03T13:20:00Z"
+    },
+    "error": {}
+}

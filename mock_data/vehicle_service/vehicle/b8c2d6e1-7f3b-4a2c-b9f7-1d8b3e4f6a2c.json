@@ -1,0 +1,52 @@
+{
+    "data": {
+        "id": "b8c2d6e1-7f3b-4a2c-b9f7-1d8b3e4f6a2c",
+        "is_booked": true,
+        "rental_firm_id": "b2c1d7e3-4c3f-5g3b-c7g0-2c2b8e6b2g4f",
+        "payment_types": [
+            {
+                "type": "HOUR",
+                "amount": 130000.00,
+                "registrated_at": "2024-07-05T10:10:00Z",
+                "updated_at": "2024-11-20T14:50:00Z"
+            },
+            {
+                "type": "DAY",
+                "amount": 910000.00,
+                "registrated_at": "2024-07-05T10:10:00Z",
+                "updated_at": "2024-11-20T14:50:00Z"
+            },
+            {
+                "type": "WEEK",
+                "amount": 5100000.00,
+                "registrated_at": "2024-07-05T10:10:00Z",
+                "updated_at": "2024-11-20T14:50:00Z"
+            },
+            {
+                "type": "MONTH",
+                "amount": 18500000.00,
+                "registrated_at": "2024-07-05T10:10:00Z",
+                "updated_at": "2024-11-20T14:50:00Z"
+            }
+        ],
+        "status": "booked",
+        "visible": true,
+        "make": "Honda",
+        "model": "Civic",
+        "mileage": 30000,
+        "color": "Red",
+        "fuel_type": ["Hybrid"],
+        "image_url": ["civic1.jpg", "civic2.jpg"],
+        "catigory": "Sedan",
+        "vin": "1HGCM82633A123456",
+        "requirements": {
+            "licence_type": ["B", "C"],
+            "experiance": 4,
+            "registrated_at": "2024-10-20T09:15:00Z",
+            "updated_at": "2024-12-02T11:30:00Z"
+        },
+        "registrated_at": "2024-11-15T08:30:00Z",
+        "updated_at": "2024-12-05T14:45:00Z"
+    },
+    "error": {}
+}

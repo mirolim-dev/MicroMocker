@@ -1,0 +1,11 @@
+{
+    "data": {
+        "id": "b2c1d7e3-4c3f-5g3b-c7g0-2c2b8e6b2g4f",
+        "name": "Speedy Rentals",
+        "location": "Main Street, Los Angeles",
+        "longitude": "-118.2437",
+        "latitude": "34.0522",
+        "active": true
+    },
+    "error": {}
+}

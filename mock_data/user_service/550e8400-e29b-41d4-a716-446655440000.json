@@ -1,0 +1,21 @@
+{
+    "data": {
+        "id": "550e8400-e29b-41d4-a716-446655440000",
+        "first_name": "John",
+        "last_name": "Doe",
+        "date_of_birth": "1990-01-01",
+        "phone": "+1234567890",
+        "role": "regular",
+        "is_verifyed": true,
+        "preferences": {"fuel_type": "Petrol"},
+        "deposite_balance": 1000.50,
+        "licence_plate_is_verifyed": true,
+        "licence_plate": {
+            "id": "650e8400-e29b-41d4-a716-446655440001",
+            "licence_type": "B",
+            "issued_date": "2015-06-15",
+            "expiry_date": "2025-06-15"
+        }
+    },
+    "error":{}
+}
