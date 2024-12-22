@@ -1,4 +1,4 @@
-# FakeAPI - Service-to-Service Communication for Microservices
+# MicroMocker - Service-to-Service Communication for Microservices
 ## Tools and Technologies Used
 
 Here are the main tools and technologies used in this project:
@@ -12,10 +12,10 @@ Here are the main tools and technologies used in this project:
 - **JWT Authentication**  
   ![JWT](https://img.shields.io/badge/JWT-%23FF9E00?style=for-the-badge&logo=javascript&logoColor=white)
 
-
+****
 ## Introduction
 
-**FakeAPI** is a simple and flexible solution designed for developers working on **microservices** that need to **simulate service-to-service communication** during the development phase. It allows developers to easily mock APIs for different services, including the use of **JWT authentication**, to simulate real-world scenarios in a safe and controlled environment.
+**MicroMocker** is a simple and flexible solution designed for developers working on **microservices** that need to **simulate service-to-service communication** during the development phase. It allows developers to easily mock APIs for different services, including the use of **JWT authentication**, to simulate real-world scenarios in a safe and controlled environment.
 
 This project was built with **FastAPI** and is ideal for those who need to work on their microservices' business logic in parallel, without waiting for actual service endpoints to be implemented.
 
@@ -64,7 +64,6 @@ The project consists of multiple services, each running on a different port, and
 1. **Clone the repository**:
    ```bash
    git clone https://github.com/mirolim-dev/MicroMocker.git
-   cd FakeAPI
    ```
 
 2. **Install dependencies**: Make sure you have Python 3.x installed. Then, install the required packages:
