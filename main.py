@@ -1,8 +1,8 @@
 import uvicorn
 from multiprocessing import Process
 
-from user_service import user_app
-from vehicle_service import vehicle_app
+from services.user_service import user_app
+from services.vehicle_service import vehicle_app
 
 
 def run_user_service():
