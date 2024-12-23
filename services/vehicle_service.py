@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 
-from mock_data_loader import load_mock_data
+from utils.mock_data_loader import load_mock_data
 
 vehicle_app = FastAPI()
 

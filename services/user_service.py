@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 
-from mock_data_loader import load_mock_data
+from utils.mock_data_loader import load_mock_data
 
 user_app = FastAPI()
 
