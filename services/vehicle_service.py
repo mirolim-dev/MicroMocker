@@ -11,7 +11,6 @@ vehicle_app = FastAPI()
 
 SECRET_KEY = os.getenv("VEHICLE_SERVICE_SECRET_KEY")
 ALGORITHM = os.getenv("VEHICLE_SERVICE_ALGORITHM")
-ISS = os.getenv("VEHICLE_SERVICE_ISS")
 
 vehicle_service_url = '/vehicle_service/vehicle/'
 # a3f9b1c6-5e2f-4d3a-b6f9-2c7a1d5b4e7a
@@ -21,10 +20,9 @@ firm_service_url = '/vehicle_service/firm/'
 async def authenticate(token:str = Header(...)):
     try:
         verify_jwt_token(
+            token=token,
             secret_key=SECRET_KEY,
-            algorithm=ALGORITHM, 
-            iss=ISS,
-            token=token
+            algorithm=ALGORITHM
             )
     except Exception as e:
         raise HTTPException(status_code=401, detail=str(e))

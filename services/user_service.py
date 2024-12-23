@@ -10,7 +10,6 @@ load_dotenv()
 
 SECRET_KEY = os.getenv("USER_SERVICE_SECRET_KEY") #use your own secret key
 ALGORITHM = os.getenv("USER_SERVICE_ALGORITHM") #Default JWT algorithm is HS256. You can Use any algorithm you want
-ISS = os.getenv("USER_SERVICE_ISS") #Issuer service
 user_app = FastAPI()
 
 user_service_url = '/user_service/'
@@ -19,10 +18,9 @@ user_service_url = '/user_service/'
 async def authenticate(token: str = Header(...)):
     try:
         verify_jwt_token(
+            token=token,
             secret_key=SECRET_KEY,
-            algorithm=ALGORITHM, 
-            iss=ISS,
-            token=token
+            algorithm=ALGORITHM
             )
     except Exception as e:
         raise HTTPException(status_code=401, detail=str(e))
