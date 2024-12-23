@@ -4,7 +4,7 @@ import os
 from dotenv import load_dotenv
 
 from utils.mock_data_loader import load_mock_data
-from utils.jwt_utils import verify_jwt_token
+from utils.jwt_utils import verify_jwt_token, create_access_token, create_refresh_token
 
 load_dotenv()
 
@@ -24,6 +24,31 @@ async def authenticate(token: str = Header(...)):
             )
     except Exception as e:
         raise HTTPException(status_code=401, detail=str(e))
+
+@user_app.get("/refresh-token")
+async def refresh_token(refresh_token: str = Header(...)):
+    try:
+        #verify the  refresh token
+        payload = verify_jwt_token(
+            token=refresh_token,
+            secret_key=SECRET_KEY,
+            algorithm=ALGORITHM
+        )
+
+        # Generate new access token
+        new_access_token = create_access_token(
+            data={
+                "service": "user_service",
+                "payload": payload
+                },
+            secret_key=SECRET_KEY, 
+            algorithm=ALGORITHM,
+            expires_in=1440 #1 day
+        )
+        return {'access_token': new_access_token}
+    except Exception as e:
+        raise HTTPException(status_code=401, detail=str(e))
+
 
 @user_app.get("/")
 async def welcome():
