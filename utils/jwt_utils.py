@@ -7,9 +7,6 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-SECRET_KEY = os.getenv("SECRET_KEY") #use your own secret key
-ALGORITHM = os.getenv("ALGORITHM") #Default JWT algorithm is HS256. You can Use any algorithm you want
-
 def create_jwt_token(secret_key:str, algorithm:str, iss:str, data: Dict, expires_in: int = 60):
     """
     Generates JWT token to each server by their secret_key, Algorithm.
